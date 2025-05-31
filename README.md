@@ -54,13 +54,13 @@ git clone https://github.com/your-team-name/satellite-predictive-maintenance.git
 
 ###Install dependencies
 
-pip install -r requirements.txt
+* pip install -r requirements.txt
 
 Run training & inference
 
-python train_model.py
+* python train_model.py
 
-python predict_rul.py
+* python predict_rul.py
 
 View results
 
