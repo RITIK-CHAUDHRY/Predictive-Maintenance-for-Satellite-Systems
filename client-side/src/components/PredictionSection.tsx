@@ -130,7 +130,7 @@ const PredictionSection = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="telemetry-file" className="text-gray-300">
-                    Select telemetry data file (CSV, JSON, or XML)
+                    Select telemetry data file (CSV)
                   </Label>
                   <div className="relative">
                     <Input
