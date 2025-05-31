@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Upload, Brain, AlertTriangle, CheckCircle, FileInput, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -52,10 +51,9 @@ const PredictionSection = () => {
     
     try {
       const formData = new FormData();
-      formData.append('telemetryFile', file);
+      formData.append('file', file);
 
-      // Replace this URL with your actual backend API endpoint
-      const response = await fetch('/api/predict', {
+      const response = await fetch('/predict', {
         method: 'POST',
         body: formData,
       });
