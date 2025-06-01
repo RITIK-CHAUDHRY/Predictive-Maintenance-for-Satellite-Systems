@@ -53,7 +53,7 @@ const PredictionSection = () => {
       const formData = new FormData();
       formData.append('file', file);
 
-      const response = await fetch('/api', {
+      const response = await fetch('/api/predict', {
         method: 'POST',
         body: formData,
       });
