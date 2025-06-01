@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => ({
         target: 'https://predictive-maintenance-for-satellite.onrender.com',
         changeOrigin: true,
         secure: false,
-        rewrite: (path) => path.replace(/^\/api/, ''),
+        // Removed rewrite to keep /api prefix intact
       },
     },
   },
