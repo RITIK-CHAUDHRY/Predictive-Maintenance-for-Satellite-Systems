@@ -19,12 +19,11 @@ LSTM_SEQUENCE_LENGTH = 50
 with app.app_context():
     load_all_models()
 
-# No need for an index route if frontend is separate
-# @app.route('/')
-# def index():
-#     return "Your backend is running." # Or some simple landing page
+@app.route('/', methods=['GET', 'HEAD'])
+def index():
+    return "Backend is running.", 200
 
-@app.route('/predict', methods=['POST'])
+@app.route('/api/predict', methods=['POST'])
 def predict():
     # Ensure the uploads directory exists
     if not os.path.exists(app.config['UPLOAD_FOLDER']):
