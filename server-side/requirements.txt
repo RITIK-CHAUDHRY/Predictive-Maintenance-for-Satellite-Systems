@@ -1,8 +1,9 @@
 # txt
-Flask==2.3.3 # Or a recent version
-pandas==2.0.3 # Or the version you used
-numpy==1.24.3 # Or the version you used
-scikit-learn==1.2.2 # Or the version you used
-tensorflow==2.13.0 # Or the version you used
-xgboost==1.7.6 # Or the version you used
-h5py==3.9.0 # Needed for saving/loading HDF5 models
+gunicorn
+Flask
+pandas
+numpy
+scikit-learn
+tensorflow==2.18.0
+xgboost
+h5py

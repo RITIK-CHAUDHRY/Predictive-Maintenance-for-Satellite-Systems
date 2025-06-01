@@ -162,4 +162,4 @@ if __name__ == '__main__':
     # Create uploads directory if it doesn't exist
     if not os.path.exists(UPLOAD_FOLDER):
         os.makedirs(UPLOAD_FOLDER)
-    app.run(debug=True) # Set debug=False for production
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 10000)), debug=True) # Set debug=False for production
