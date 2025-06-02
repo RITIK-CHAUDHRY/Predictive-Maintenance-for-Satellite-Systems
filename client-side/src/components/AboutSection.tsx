@@ -12,7 +12,7 @@ const AboutSection = () => {
     {
       icon: Target,
       title: "Precision Forecasting",
-      description: "Identify potential failures weeks or months in advance, enabling proactive maintenance and mission planning"
+      description: "Identify potential failures and updates you in advance, enabling proactive maintenance and mission planning"
     },
     {
       icon: Rocket,
@@ -22,7 +22,7 @@ const AboutSection = () => {
     {
       icon: Users,
       title: "Expert Team",
-      description: "Led by data scientists with decades of satellite operations experience"
+      description: "Led by data scientists with hands on experience in satellite operations and AI development"
     }
   ];
 
